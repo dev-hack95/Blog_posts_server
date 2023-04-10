@@ -53,9 +53,3 @@ func DeletePosts(ID int64) *Post {
 	db.Where("ID=?", ID).Unscoped().Delete(&deletePost)
 	return &deletePost
 }
-
-func UpdatePosts(ID int64) *Post {
-	var post Post
-	db.Where("ID=?", ID).Updates(&post)
-	return &post
-}
