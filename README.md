@@ -19,7 +19,6 @@
 
 ## Flowchart
 
-## Flowchart
 ```mermaid
 flowchart LR;
     A(PKG) -----> B(config);
